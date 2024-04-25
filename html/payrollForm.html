@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Employee Payroll Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/payrollForm.css">
 </head>
 
@@ -22,153 +23,169 @@
 
     <div class="form-container">
         <div class="form">
-            <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 120%; margin-bottom: 30px;">Employee Payroll Form</h3>
+            <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 120%; margin-bottom: 30px;">Employee
+                Payroll Form</h3>
             <form action="">
                 <div class="form-content">
                     <div class="wrap">
                         <label class="leftBox" for="name">Name</label>
-                        <input class="x"  type="text">
+                        <input class="x" type="text">
                     </div>
-                    <div style="margin-top: 3%;">
+                    <div class="wrap" style="margin-top: 3%;">
                         <label class="leftBox" for="profile">Profile Image</label>
-                        <div class="flex" style="width: 60%;">
+                        <div class="flex en">
                             <div class="flex">
                                 <input class="radio" type="radio" id="profileid1" name="profile">
-                                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Co_z3dDoX4ZpWw_pni2B5MHOcTXLjsPZgb-Mfl16jw&s" alt="image1" name="profile"></div>
-                                
+                                <div><img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Co_z3dDoX4ZpWw_pni2B5MHOcTXLjsPZgb-Mfl16jw&s"
+                                        alt="image1" name="profile"></div>
+
                             </div>
                             <div class="flex">
                                 <input class="radio" type="radio" id="profileid2" name="profile">
-                                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9iUKmILrsV1jsba0W5JN-nwwOXPNg93CmNujxLdCyPQ&s" alt="image1" name="profile"></div>
-                                
+                                <div><img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9iUKmILrsV1jsba0W5JN-nwwOXPNg93CmNujxLdCyPQ&s"
+                                        alt="image1" name="profile"></div>
+
                             </div>
                             <div class="flex">
                                 <input class="radio" type="radio" id="profileid3" name="profile">
-                                <div><img src="https://pbs.twimg.com/media/EeUI99bUcAMiRFa.jpg:large" alt="image1" name="profile"></div>
-                                
+                                <div><img src="https://pbs.twimg.com/media/EeUI99bUcAMiRFa.jpg:large" alt="image1"
+                                        name="profile"></div>
+
                             </div>
                             <div class="flex">
                                 <input class="radio" type="radio" id="profileid4" name="profile">
-                                <div><img src="https://www.sukhothai.in/wp-content/uploads/2016/07/male-passport-size-2.jpg" alt="image1" name="profile"></div>
-                                
+                                <div><img
+                                        src="https://www.sukhothai.in/wp-content/uploads/2016/07/male-passport-size-2.jpg"
+                                        alt="image1" name="profile"></div>
+
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <label class="leftBox" for="gender">Gender</label>
+                    <div class="wrap">
+                        <label class="leftBox en-s" for="gender">Gender</label>
                         <div style="display: flex; gap: 6%;">
                             <div><input class="radio" type="radio" name="gender" id="g1" value="Male"> Male</div>
                             <div><input class="radio" type="radio" name="gender" id="g2" value="Female"> Female</div>
-                            
+
                         </div>
                     </div>
-                    <div style="margin-top: 3%;">
+                    <div class="wrap" style="margin-top: 3%;">
                         <label class="leftBox" for="department">Department</label>
-                        <div class="flex" style="width: 70%;">
+                        <div class="flex en" style="justify-content: space-between;">
                             <div><input class="radio" type="checkbox" name="department" id="d1" value="hr"> Hr</div>
-                            <div><input class="radio" type="checkbox" name="department" id="d2" value="sales"> Sales</div>
-                            <div><input class="radio" type="checkbox" name="department" id="d3" value="finance"> Finance</div>
-                            <div><input class="radio" type="checkbox" name="department" id="d4" value="engineer"> Engineer</div>
-                            <div><input class="radio" type="checkbox" name="department" id="d5" value="other"> Other</div>
-                            
+                            <div><input class="radio" type="checkbox" name="department" id="d2" value="sales"> Sales
+                            </div>
+                            <div><input class="radio" type="checkbox" name="department" id="d3" value="finance"> Finance
+                            </div>
+                            <div><input class="radio" type="checkbox" name="department" id="d4" value="engineer">
+                                Engineer</div>
+                            <div><input class="radio" type="checkbox" name="department" id="d5" value="other"> Other
+                            </div>
+
                         </div>
                     </div>
-                    <div>
-                        <label class="leftBox" for="salary">Salary</label>
+                    <div class="wrap">
+                        <label class="leftBox en-sl" for="salary">Salary</label>
                         <div>
-                        <select class="dropdown" style="padding:5px; width: 38%;" name="salary" id="sal1">
-                            <option value="" disabled selected>Select Salary</option>
-                            <option value="10000">10000</option>
-                            <option value="15000">15000</option>
-                            <option value="20000">20000</option>
-                            <option value="25000">25000</option>
-                            <option value="30000">30000</option>
-                            <option value="40000">35000+</option>
-                        </select>
+                            <div>
+                            <select style="padding:24%; width: 140%;" name="salary" id="sal1">
+                                <option value="" disabled selected>Salary</option>
+                                <option value="10000">10000</option>
+                                <option value="15000">15000</option>
+                                <option value="20000">20000</option>
+                                <option value="25000">25000</option>
+                                <option value="30000">30000</option>
+                                <option value="40000">35000+</option>
+                            </select>
+                            </div>
                         </div>
                     </div>
-                    <div style="margin-top: 2%;">
-                        <label class="leftBox" for="date">Start Date</label>
-                        <div class="flex" style="width: 60%;">
-                        <select class="dropdown" style="padding:5px; width: 30%;" name="date" id="date">
-                            <option value="" disabled selected>Day</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>
-                        </select>
+                    <div class="wrap">
+                        <label class="leftBox en-sl" style="margin-top: 3%;" for="date">Start Date</label>
+                        <div class="wrap n" style="width: 75%;gap: 3%;margin-bottom: -10%;margin-top: 2%;">
+                            <div>
+                            <select style="height:50px;width: 100px;" name="date" id="date">
+                                <option value="" disabled selected>Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            </div>
 
-                        <select class="dropdown" style="padding:5px; width: 30%;" name="salary" id="sal1">
-                            <option value="" disabled selected>Month</option>
-                            <option value="Jan">January</option>
-                            <option value="Feb">February</option>
-                            <option value="Mar">March</option>
-                            <option value="Apr">April</option>
-                            <option value="May">May</option>
-                            <option value="Jun">June</option>
-                            <option value="Jul">July</option>
-                            <option value="Aug">August</option>
-                            <option value="Sep">September</option>
-                            <option value="Oct">October</option>
-                            <option value="Nov">November</option>
-                            <option value="Dec">December</option>
-                        </select>
-
-                        <select class="dropdown" style="padding:5px; width: 30%;" name="salary" id="sal1">
-                            <option value="" disabled selected>Year</option>
-                            <option value="2015">2015</option>
-                            <option value="2016">2016</option>
-                            <option value="2017">2017</option>
-                            <option value="2018">2018</option>
-                            <option value="2019">2019</option>
-                            <option value="2020">2020</option>
-                            <option value="2021">2021</option>
-                            <option value="2022">2022</option>
-                            <option value="2023">2023</option>
-                            <option value="2024">2024</option>
-                        </select>
+                            <div>
+                            <select style="height:50px;width: 100px;" name="salary" id="sal1">
+                                <option value="" disabled selected>Month</option>
+                                <option value="Jan">January</option>
+                                <option value="Feb">February</option>
+                                <option value="Mar">March</option>
+                                <option value="Apr">April</option>
+                                <option value="May">May</option>
+                                <option value="Jun">June</option>
+                                <option value="Jul">July</option>
+                                <option value="Aug">August</option>
+                                <option value="Sep">September</option>
+                                <option value="Oct">October</option>
+                                <option value="Nov">November</option>
+                                <option value="Dec">December</option>
+                            </select>
+                            </div>
+                            <div>
+                            <select style="height:50px;width: 100px;" name="salary" id="sal1">
+                                <option value="" disabled selected>Year</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                            </select>
+                            </div>
                         </div>
                     </div>
                     <div style="margin-top: 2%;">
                         <label class="leftBox" for="notes">Notes</label>
                         <div>
-                            <textarea class="x" name="notes" id="note1" cols="60" rows="4"></textarea>
+                            <textarea class="x en" name="notes" id="note1" cols="60" rows="4"></textarea>
                         </div>
                     </div>
-                    <div>
-
-                        <div style="display: flex; flex-direction: row-reverse;">
-                            <button style="margin-right: 5%;">Reset</button>
-                            <button type="submit">Submit</button>
-                            <button style="margin-right: 33%;">Cancel</button>
-                        </div>
+                    <div class="wrap" style="gap: 4%;">
+                            <button class="btn" style="display: flex;align-items: center;margin-right:20%;">Cancel</button>
+                            <button class="bt" type="submit">Submit</button>
+                            <button class="bt">Reset</button>
                     </div>
 
                 </div>

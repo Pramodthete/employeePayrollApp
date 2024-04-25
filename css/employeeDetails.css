@@ -1,0 +1,105 @@
+.details-form{
+    background-color: rgb(242, 242, 242);
+    padding: 1%;
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid rgb(242, 242, 242);
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 243, 243);
+    padding: 1%;
+}
+
+.flex-d{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 8%;
+    align-items: center;
+    gap: 10%;
+}
+
+.yellow{
+    padding: 2%;
+    background-color: rgb(227, 247, 128);
+    border-radius: 40%;
+}
+
+.floatLeft{
+    float: left;
+}
+
+.border{
+    border: 1px solid rgb(239, 238, 238);
+}
+
+thead{
+    background-color: rgb(51, 58, 72); 
+    color: white; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 5px;
+    border: 1px solid rgb(137, 136, 136);
+}
+
+.button-container{
+    display: flex;
+    gap: 5px;
+}
+tr {
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+td{
+    background-color: white;
+}
+
+.actions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color:rgb(51, 58, 72);
+}
+td{
+    text-align: center; 
+}
+th{
+    padding: 1%;
+    text-align: center;
+    font-size: small;
+    border-right: 1px solid rgb(51, 58, 72);
+}
+
+.dept{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 600px) {
+    .details-form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .details-form{
+        overflow-x: scroll;
+    }
+}
+
+
+@media only screen and (max-width: 334px) {
+    .ed{
+        width: 100%;
+    }
+}
