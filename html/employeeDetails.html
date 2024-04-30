@@ -7,15 +7,16 @@
     <title>Employee Details</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="../css/employeeDetails.css"> -->
     <link rel="stylesheet" href="../css/payrollForm.css">
     <link rel="stylesheet" href="../css/employeeDetails.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="head-container">
         <div class="head1">
-            <div class="icon-div"><i class="fa fa-user-o icon"></i></i></div>
+            <div class="icon-div"><i class="fa fa-user-o icon"></i></div>
             <div class="head1-text1"><b>EMPLOYEE <br>
                     <div style="color: black;">PAYROLL</div>
                 </b></div>
@@ -28,14 +29,16 @@
     <div class="form-container">
         <div class="details-form">
             <div style="display: flex;flex-wrap: wrap; justify-content: space-between;">
-                <h3 class="ed" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 120%; padding-bottom: 3%; ">
+                <h3 class="ed"
+                    style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 120%; padding-bottom: 3%; ">
                     Employee Details</h3>
-                <div class="button-container" style="width: 30%; height: 10%;padding-top: 1%;">
-                    <button class="search" style="border-radius: 30%;padding: 4%; background-color: white;"><i
+                <div class="button-container" style="height: 10%;padding-top: 1%;">
+                    <input type="text" class="searchbody i" style="font-size: medium;" id="searchInput" placeholder="Search here...">
+                    <button class="search searchbody" style="border-radius: 30%;padding: 4%; background-color: white;display: flex;justify-content: center;align-items:center ;"><i
                             class="fa fa-search"></i>
                     </button>
-                    <button class="add" style="background-color: rgb(131, 174, 52);"><a href="./payrollForm.html"
-                            style="text-decoration: none;color: white;"><strong style="font-size: larger;">&#43; Add
+                    <button class="add searchbody" style="background-color: rgb(131, 174, 52);overflow: inherit;width: 100%;"><a href="./payrollForm.html"
+                            style="text-decoration: none;color: white;"><strong style="font-size: larger;"> Add
                                 User</strong> </a></button>
                 </div>
             </div>
@@ -43,351 +46,25 @@
             <div class="form-content">
                 <table style="overflow-x: scroll;">
                     <thead>
-                        <tr >
+                        <tr>
                             <th></th>
                             <th><span class="table-h" style="margin-left: -25%;">NAME</span></th>
                             <th><span class="table-h">GENDER</span></th>
                             <th><span class="table-h">DEPARTMENT</span></th>
-                            <th><span class="table-h">SALARY</span></th>
+                            <th title="CLick On Salary to sort accordingly"><span class="table-h" id="sortSalary" style="cursor: pointer;">SALARY</span></th>
                             <th><span class="table-h">START DATE</span></th>
                             <th><span class="table-h">ACTIONS</span></th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div>
-                                    <img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9iUKmILrsV1jsba0W5JN-nwwOXPNg93CmNujxLdCyPQ&s"
-                                        alt="image1" name="profile">
-                                </div>
-                            </td>
-                            <td>
-                                <div>
-                                    <div>John Michael Smith</div>
-                                </div>
-                            </td>
-                            <td>Male</td>
-                            <td>
-                                <div class="dept">
-                                    <div class="yellow">Sales</div>
-                                    <div class="yellow">HR</div>
-                                    <div class="yellow">Finance</div>
-                                </div>
-                            </td>
-                            <td>10,000</td>
-                            <td>29 Oct 2019</td>
-                            <td>
-                                <div class="actions">
-                                    <i class="material-icons" style="font-size:20px">delete</i>
-                                    <i class="fa fa-edit" style="font-size:20px"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>
-                                    <img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Co_z3dDoX4ZpWw_pni2B5MHOcTXLjsPZgb-Mfl16jw&s"
-                                        alt="image1" name="profile">
-                                </div>
-                            </td>
-                            <td>
-                                <div>
-                                    <div>Emily Elizabeth Johnson</div>
-                                </div>
-
-                            </td>
-                            <td>Female</td>
-                            <td>
-                                <div class="dept">
-                                    <div class="yellow">Sales</div>
-                                    <div class="yellow">HR</div>
-                                    <div class="yellow">Finance</div>
-                                </div>
-                            </td>
-                            <td>10,000</td>
-                            <td>29 Oct 2019</td>
-                            <td>
-                                <div class="actions">
-                                    <i class="material-icons" style="font-size:20px">delete</i>
-                                    <i class="fa fa-edit" style="font-size:20px"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>
-                                    <img src="https://pbs.twimg.com/media/EeUI99bUcAMiRFa.jpg:large" alt="image1"
-                                            name="profile">
-                                </div>
-
-                            </td>
-                            <td>
-                                <div>
-                                    <div>Daniel Thomas Williams</div>
-                                </div>
-                            </td>
-                            <td>Male</td>
-                            <td>
-                                <div class="dept">
-                                    <div class="yellow">Sales</div>
-                                    <div class="yellow">HR</div>
-                                    <div class="yellow">Finance</div>
-                                </div>
-                            </td>
-                            <td>10,000</td>
-                            <td>29 Oct 2019</td>
-                            <td>
-                                <div class="actions">
-                                    <i class="material-icons" style="font-size:20px">delete</i>
-                                    <i class="fa fa-edit" style="font-size:20px"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>
-                                    <img src="https://pbs.twimg.com/media/EeUI99bUcAMiRFa.jpg:large" alt="image1"
-                                            name="profile">
-                                </div>
-                            </td>
-                            <td>
-                                <div>
-                                    <div>Sarah Michelle Brown</div>
-                                </div>
-
-                            </td>
-                            <td>Female</td>
-                            <td>
-                                <div class="dept">
-                                    <div class="yellow">Sales</div>
-                                    <div class="yellow">HR</div>
-                                    <div class="yellow">Finance</div>
-                                </div>
-                            </td>
-                            <td>10,000</td>
-                            <td>29 Oct 2019</td>
-                            <td>
-                                <div class="actions">
-                                    <i class="material-icons" style="font-size:20px">delete</i>
-                                    <i class="fa fa-edit" style="font-size:20px"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>
-                                    <img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9iUKmILrsV1jsba0W5JN-nwwOXPNg93CmNujxLdCyPQ&s"
-                                        alt="image1" name="profile">
-                                </div>
-                            </td>
-                            <td>
-                                <div>
-                                    <div>David Matthew Davis</div>
-                                </div>
-                            </td>
-                            <td>Male</td>
-                            <td>
-                                <div class="dept">
-                                    <div class="yellow">Sales</div>
-                                    <div class="yellow">HR</div>
-                                    <div class="yellow">Finance</div>
-                                </div>
-                            </td>
-                            <td>10,000</td>
-                            <td>29 Oct 2019</td>
-                            <td>
-                                <div class="actions">
-                                    <i class="material-icons" style="font-size:20px">delete</i>
-                                    <i class="fa fa-edit" style="font-size:20px"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>
-                                    <img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Co_z3dDoX4ZpWw_pni2B5MHOcTXLjsPZgb-Mfl16jw&s"
-                                        alt="image1" name="profile">
-                                </div>
-                            </td>
-                            <td>
-                                <div>
-                                    <div>Jennifer Nicole Wilson</div>
-                                </div>
-                            </td>
-                            <td>Female</td>
-                            <td>
-                                <div class="dept">
-                                    <div class="yellow">Sales</div>
-                                    <div class="yellow">HR</div>
-                                    <div class="yellow">Finance</div>
-                                </div>
-                            </td>
-                            <td>10,000</td>
-                            <td>29 Oct 2019</td>
-                            <td>
-                                <div class="actions">
-                                    <i class="material-icons" style="font-size:20px">delete</i>
-                                    <i class="fa fa-edit" style="font-size:20px"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>
-                                    <img src="https://pbs.twimg.com/media/EeUI99bUcAMiRFa.jpg:large" alt="image1"
-                                            name="profile">
-                                </div>
-                            </td>
-                            <td>
-                                <div>
-                                    <div>Christopher James Anderson</div>
-                                </div>
-                            </td>
-                            <td>Male</td>
-                            <td>
-                                <div class="dept">
-                                    <div class="yellow">Sales</div>
-                                    <div class="yellow">HR</div>
-                                    <div class="yellow">Finance</div>
-                                </div>
-                            </td>
-                            <td>10,000</td>
-                            <td>29 Oct 2019</td>
-                            <td>
-                                <div class="actions">
-                                    <i class="material-icons" style="font-size:20px">delete</i>
-                                    <i class="fa fa-edit" style="font-size:20px"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div >
-                                    <img
-                                        src="https://www.sukhothai.in/wp-content/uploads/2016/07/male-passport-size-2.jpg"
-                                        alt="image1" name="profile">
-                                </div>
-                            </td>
-                            <td>
-                                <div>
-                                    <div>Jessica Lauren Martinez</div>
-                                </div>
-                            </td>
-                            <td>Female</td>
-                            <td>
-                                <div class="dept">
-                                    <div class="yellow">Sales</div>
-                                    <div class="yellow">HR</div>
-                                    <div class="yellow">Finance</div>
-                                </div>
-                            </td>
-                            <td>10,000</td>
-                            <td>29 Oct 2019</td>
-                            <td>
-                                <div class="actions">
-                                    <i class="material-icons" style="font-size:20px">delete</i>
-                                    <i class="fa fa-edit" style="font-size:20px"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div >
-                                    <img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Co_z3dDoX4ZpWw_pni2B5MHOcTXLjsPZgb-Mfl16jw&s"
-                                        alt="image1" name="profile">
-                                </div>
-                            </td>
-                            <td>
-                                <div>
-                                    <div>Matthew Ryan Thompson</div>
-                                </div>
-                            </td>
-                            <td>Male</td>
-                            <td>
-                                <div class="dept">
-                                    <div class="yellow">Sales</div>
-                                    <div class="yellow">HR</div>
-                                    <div class="yellow">Finance</div>
-                                </div>
-                            </td>
-                            <td>10,000</td>
-                            <td>29 Oct 2019</td>
-                            <td>
-                                <div class="actions">
-                                    <i class="material-icons" style="font-size:20px">delete</i>
-                                    <i class="fa fa-edit" style="font-size:20px"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>
-                                    <img src="https://pbs.twimg.com/media/EeUI99bUcAMiRFa.jpg:large" alt="image1"
-                                            name="profile">
-                                </div>
-                            </td>
-                            <td>
-                                <div>
-                                    <div>Amanda Marie Garcia</div>
-                                </div>
-                            </td>
-                            <td>Female</td>
-                            <td>
-                                <div class="dept">
-                                    <div class="yellow">Sales</div>
-                                    <div class="yellow">HR</div>
-                                    <div class="yellow">Finance</div>
-                                </div>
-                            </td>
-                            <td>10,000</td>
-                            <td>29 Oct 2019</td>
-                            <td>
-                                <div class="actions">
-                                    <i class="material-icons" style="font-size:20px">delete</i>
-                                    <i class="fa fa-edit" style="font-size:20px"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div><img
-                                    src="https://www.sukhothai.in/wp-content/uploads/2016/07/male-passport-size-2.jpg"
-                                    alt="image1" name="profile">
-                                </div>
-                            </td>
-                            <td>
-                                <div>
-                                    <div>Joshua Patrick Robinson</div>
-                                </div>
-                            </td>
-                            <td>Male</td>
-                            <td>
-                                <div class="dept">
-                                    <div class="yellow">Sales</div>
-                                    <div class="yellow">HR</div>
-                                    <div class="yellow">Finance</div>
-                                </div>
-                            </td>
-                            <td>10,000</td>
-                            <td>29 Oct 2019</td>
-                            <td>
-                                <div class="actions">
-                                    <i class="material-icons" style="font-size:20px">delete</i>
-                                    <i class="fa fa-edit" style="font-size:20px"></i>
-                                </div>
-                            </td>
-                        </tr>
+                    <tbody id="tbody">
+                        
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 
+    <script src="../js/employeeDetails.js"></script>
 </body>
 
 </html>

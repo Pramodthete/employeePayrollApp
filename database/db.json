@@ -1,0 +1,88 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "name": "Vaibhav",
+      "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9iUKmILrsV1jsba0W5JN-nwwOXPNg93CmNujxLdCyPQ&s",
+      "gender": "Male",
+      "department": [
+        "Hr",
+        "Sales",
+        "Finance"
+      ],
+      "salary": "20000",
+      "date": "29 April 2024",
+      "notes": "I am Coder and I like Coding"
+    },
+    {
+      "id": "2",
+      "name": "Pramod",
+      "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Co_z3dDoX4ZpWw_pni2B5MHOcTXLjsPZgb-Mfl16jw&s",
+      "gender": "Male",
+      "department": [
+        "Hr",
+        "Sales",
+        "Finance"
+      ],
+      "salary": "25000",
+      "date": "20 April 2024",
+      "notes": "I am a Full Stack Developer"
+    },
+    {
+      "id": "3",
+      "name": "Shraddha",
+      "profile": "https://pbs.twimg.com/media/EeUI99bUcAMiRFa.jpg:large",
+      "gender": "Female",
+      "department": [
+        "Hr",
+        "Sales",
+        "Finance"
+      ],
+      "salary": "30000",
+      "date": "23 April 2024",
+      "notes": "I am not a Coder still I love Coding"
+    },
+    {
+      "id": "4",
+      "name": "Pranav",
+      "profile": "https://www.sukhothai.in/wp-content/uploads/2016/07/male-passport-size-2.jpg",
+      "gender": "Male",
+      "department": [
+        "Hr",
+        "Sales",
+        "Finance"
+      ],
+      "salary": "35000",
+      "date": "29 April 2024",
+      "notes": "I like Coding"
+    },
+    {
+      "name": "Rahul",
+      "profile": "../asset/meetingOnline.jpg",
+      "gender": "Male",
+      "department": [
+        "Hr",
+        "Sales",
+        "Finance"
+      ],
+      "salary": "20000",
+      "date": "17 February 2016",
+      "notes": "gwiysiwbh",
+      "id": "df1a"
+    },
+    {
+      "id": "968f",
+      "name": "Nitesh",
+      "profile": "../asset/shevpuri.jpg",
+      "gender": "Male",
+      "department": [
+        "Hr",
+        "Sales",
+        "Engineer"
+      ],
+      "salary": "30000",
+      "date": "15 June 2020",
+      "notes": "I am a React Developer"
+    }
+  ]
+}

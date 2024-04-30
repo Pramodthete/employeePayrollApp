@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Employee Payroll Form</title>
+    <title>Edit User</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/payrollForm.css">
 </head>
@@ -13,7 +12,7 @@
 <body>
     <div class="head-container">
         <div class="head1">
-            <div class="icon-div"><i class="fa fa-user-o icon"></i></i></div>
+            <div class="icon-div"><i class="fa fa-user-o icon"></i></div>
             <div class="head1-text1"><b>EMPLOYEE <br> <span style="color: black;">PAYROLL</span></b></div>
         </div>
         <div class="head1-text2">
@@ -23,8 +22,8 @@
 
     <div class="form-container">
         <div class="form">
-            <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 120%; margin-bottom: 30px;">Employee
-                Payroll Form</h3>
+            <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 120%; margin-bottom: 30px;">Edit
+                Employee Payroll</h3>
             <form id="employeeForm" action="">
                 <div class="form-content">
                     <div class="wrap">
@@ -35,24 +34,20 @@
                         <label class="leftBox" for="profile">Profile Image</label>
                         <div class="flex en">
                             <div class="flex">
-                                <input class="radio" type="radio" id="profileid" name="profile" value="../asset/anger.jpg">
+                                <input class="radio" type="radio" id="profileid1" name="profile" value="../asset/anger.jpg">
                                 <div><img src="../asset/anger.jpg" alt="image1" name="profile1"></div>
-
                             </div>
                             <div class="flex">
-                                <input class="radio" type="radio" id="profileid" name="profile"  value="../asset/goal.jpg">
+                                <input class="radio" type="radio" id="profileid2" name="profile" value="../asset/goal.jpg">
                                 <div><img src="../asset/goal.jpg" alt="image1" name="profile2"></div>
-
                             </div>
                             <div class="flex">
-                                <input class="radio" type="radio" id="profileid" name="profile"  value="../asset/meetingOnline.jpg">
+                                <input class="radio" type="radio" id="profileid3" name="profile" value="../asset/meetingOnline.jpg">
                                 <div><img src="../asset/meetingOnline.jpg" alt="image1" name="profile3"></div>
-
                             </div>
                             <div class="flex">
-                                <input class="radio" type="radio" id="profileid" name="profile" value="../asset/shevpuri.jpg">
+                                <input class="radio" type="radio" id="profileid4" name="profile" value="../asset/shevpuri.jpg">
                                 <div><img src="../asset/shevpuri.jpg" alt="image1" name="profile4"></div>
-
                             </div>
                         </div>
                     </div>
@@ -61,7 +56,6 @@
                         <div style="display: flex; gap: 6%;">
                             <div><input class="radio" type="radio" name="gender" id="g1" value="Male"> Male</div>
                             <div><input class="radio" type="radio" name="gender" id="g2" value="Female"> Female</div>
-
                         </div>
                     </div>
                     <div class="wrap" style="margin-top: 3%;">
@@ -76,7 +70,6 @@
                                 Engineer</div>
                             <div><input class="radio" type="checkbox" name="department" id="d5" value="Other"> Other
                             </div>
-
                         </div>
                     </div>
                     <div class="wrap">
@@ -134,7 +127,6 @@
                                     <option value="31">31</option>
                                 </select>
                             </div>
-
                             <div>
                                 <select style="height:50px;width: 100px;" name="month" id="month">
                                     <option value="" disabled selected>Month</option>
@@ -172,12 +164,13 @@
                     <div style="margin-top: 2%;">
                         <label class="leftBox" for="notes">Notes</label>
                         <div>
-                            <textarea class="x en" name="notes" id="notes" cols="60" rows="4"></textarea>
+                            <textarea class="x en" name="notes" id="notes" cols="60"
+                                rows="4"></textarea>
                         </div>
                     </div>
                     <div class="wrap" style="gap: 4%;">
                         <button type="button" class="btn" style="display: flex;align-items: center;margin-right:20%;"
-                            onclick="cancelAdd()">Cancel</button>
+                            onclick="cancelEdit()">Cancel</button>
                         <button type="submit" class="bt">Submit</button>
                         <button type="button" class="bt" onclick="resetForm()">Reset</button>
                     </div>
@@ -187,9 +180,8 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
-    <script src="../js/payrollForm.js"></script>
 
+    <script src="../js/editUser.js"></script>
 </body>
 
 </html>
