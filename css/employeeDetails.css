@@ -24,7 +24,7 @@
 }
 
 .yellow{
-    padding: 2%;
+    padding: 3%;
     background-color: rgb(227, 247, 128);
     border-radius: 40%;
 }
@@ -58,34 +58,49 @@ button{
     display: flex;
     gap: 5px;
 }
+table{
+
+    border-collapse:collapse;
+}
 tr {
-    border-bottom: 1px solid rgb(222, 222, 222);
+    border-bottom: 1px solid rgb(180, 181, 182);
 }
 
 td{
-    background-color: white;
+     background-color: white; 
+    border-bottom: 1px solid rgb(188, 189, 190);
 }
 
 .actions{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 15%;
     color:rgb(51, 58, 72);
 }
 td{
-    text-align: center; 
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    text-align: start; 
 }
 th{
-    padding: 1%;
-    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    text-align: start;
     font-size: small;
-    border-right: 1px solid rgb(51, 58, 72);
+    border:1px solid rgb(51, 58, 72);
+}
+
+
+#img-div{
+    padding-left: 10%;
 }
 
 .dept{
     display: flex; 
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 8%;
 }
 
 @media only screen and (max-width: 600px) {

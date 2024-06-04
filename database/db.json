@@ -1,20 +1,6 @@
 {
   "user": [
     {
-      "id": "1",
-      "name": "Vaibhav",
-      "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9iUKmILrsV1jsba0W5JN-nwwOXPNg93CmNujxLdCyPQ&s",
-      "gender": "Male",
-      "department": [
-        "Hr",
-        "Sales",
-        "Finance"
-      ],
-      "salary": "20000",
-      "date": "29 April 2024",
-      "notes": "I am Coder and I like Coding"
-    },
-    {
       "id": "2",
       "name": "Pramod",
       "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Co_z3dDoX4ZpWw_pni2B5MHOcTXLjsPZgb-Mfl16jw&s",
@@ -71,18 +57,71 @@
       "id": "df1a"
     },
     {
-      "id": "968f",
-      "name": "Nitesh",
-      "profile": "../asset/shevpuri.jpg",
+      "id": "e49c",
+      "name": "Suraj Phakade",
+      "profile": "../asset/goal.jpg",
+      "gender": "Male",
+      "department": [
+        "Sales",
+        "Other"
+      ],
+      "salary": "10000",
+      "date": "15 September 2023",
+      "notes": "Vue js developer"
+    },
+    {
+      "name": "Tanmay",
+      "profile": "../asset/anger.jpg",
+      "gender": "Male",
+      "department": [
+        "Sales",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "40000",
+      "date": "12 July 2023",
+      "notes": "I am a Tanmay",
+      "id": "a051"
+    },
+    {
+      "name": "Sidhesh",
+      "profile": "../asset/meetingOnline.jpg",
       "gender": "Male",
       "department": [
         "Hr",
         "Sales",
-        "Engineer"
+        "Finance"
       ],
       "salary": "30000",
-      "date": "15 June 2020",
-      "notes": "I am a React Developer"
+      "date": "15 February 2016",
+      "notes": "I have all skills",
+      "id": "d32f"
+    },
+    {
+      "name": "Prajwal",
+      "profile": "../asset/anger.jpg",
+      "gender": "Male",
+      "department": [
+        "Sales",
+        "Engineer"
+      ],
+      "salary": "25000",
+      "date": "17 March 2018",
+      "notes": "",
+      "id": "901f"
+    },
+    {
+      "name": "Nitesh",
+      "profile": "../asset/goal.jpg",
+      "gender": "Male",
+      "department": [
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "20000",
+      "date": "17 February 2020",
+      "notes": "",
+      "id": "635d"
     }
   ]
 }

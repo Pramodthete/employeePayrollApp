@@ -30,6 +30,7 @@
                         <label class="leftBox" for="name">Name</label>
                         <input class="x" type="text" id="name">
                     </div>
+                    <div id="nameErr"></div>
                     <div class="wrap" style="margin-top: 3%;">
                         <label class="leftBox" for="profile">Profile Image</label>
                         <div class="flex en">
@@ -51,6 +52,7 @@
                             </div>
                         </div>
                     </div>
+                    <div id="nameErr"></div>
                     <div class="wrap">
                         <label class="leftBox en-s" for="gender">Gender</label>
                         <div style="display: flex; gap: 6%;">
@@ -58,6 +60,7 @@
                             <div><input class="radio" type="radio" name="gender" id="g2" value="Female"> Female</div>
                         </div>
                     </div>
+                    <div id="genderErr"></div>
                     <div class="wrap" style="margin-top: 3%;">
                         <label class="leftBox" for="department">Department</label>
                         <div class="flex en" style="justify-content: space-between;">
@@ -72,6 +75,7 @@
                             </div>
                         </div>
                     </div>
+                    <div id="deptErr"></div>
                     <div class="wrap">
                         <label class="leftBox en-sl" for="salary">Salary</label>
                         <div>
@@ -88,6 +92,7 @@
                             </div>
                         </div>
                     </div>
+                    <div id="salaryErr"></div>
                     <div class="wrap">
                         <label class="leftBox en-sl" style="margin-top: 3%;" for="date">Start Date</label>
                         <div class="wrap n" style="width: 75%;gap: 3%;margin-bottom: -10%;margin-top: 2%;">
@@ -161,6 +166,7 @@
                             </div>
                         </div>
                     </div>
+                    <div id="dateErr"></div>
                     <div style="margin-top: 2%;">
                         <label class="leftBox" for="notes">Notes</label>
                         <div>
@@ -168,10 +174,11 @@
                                 rows="4"></textarea>
                         </div>
                     </div>
+                    <div id="notesErr"></div>
                     <div class="wrap" style="gap: 4%;">
                         <button type="button" class="btn" style="display: flex;align-items: center;margin-right:20%;"
                             onclick="cancelEdit()">Cancel</button>
-                        <button type="submit" class="bt">Submit</button>
+                        <button type="submit" class="bt">Update</button>
                         <button type="button" class="bt" onclick="resetForm()">Reset</button>
                     </div>
                 </div>

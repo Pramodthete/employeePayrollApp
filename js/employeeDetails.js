@@ -6,7 +6,7 @@ $(document).ready(function () {
             $('#tbody').append(`
                 <tr data-id="${user.id}">
                     <td>
-                        <div>
+                        <div id="img-div">
                             <img src="${user.profile}" alt="profile" name="profile">
                         </div>
                     </td>
@@ -21,8 +21,8 @@ $(document).ready(function () {
                             ${user.department.map(dept => `<div class="yellow">${dept}</div>`).join("")}
                         </div>
                     </td>
-                    <td>${user.salary}</td>
-                    <td>${user.date}</td>
+                    <td style="padding-left:2%;">${user.salary}</td>
+                    <td style="padding-left:3%;">${user.date}</td>
                     <td>
                         <div class="actions">
                             <a href="#"><i class="material-icons delete" style="font-size:20px">delete</i></a>

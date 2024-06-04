@@ -1,7 +1,7 @@
-
 $(document).ready(function () {
     $('#employeeForm').submit(function (event) {
         event.preventDefault();
+        
         var form_data = {
             name: $('#name').val(),
             profile: $("input[name='profile']:checked").val(),
@@ -12,21 +12,61 @@ $(document).ready(function () {
             notes: $('#notes').val()
         };
 
+        var isValid = true; 
         var namePattern = /^[a-zA-Z\s]+$/;
-        if (!namePattern.test(form_data.name)) {
-            alert('Please enter a valid name');
-            return;
+
+        if (form_data.name == '') {
+            $('#nameErr').html('Name Field Required *').css('color', 'red');
+            isValid = false;
+        } else if (!namePattern.test(form_data.name)) {
+            $('#nameErr').html('Name Should not contain Numbers *').css('color', 'red');
+            isValid = false;
+        } else {
+            $('#nameErr').html('');
         }
 
-        var salaryPattern = /^\d+(\.\d{1,2})?$/;
-        if (!salaryPattern.test(form_data.salary)) {
-            alert('Please enter a valid salary');
-            return;
+        if (form_data.salary == null) {
+            $('#salaryErr').html('Please Select a Salary *').css('color', 'red');
+            isValid = false;
+        } else {
+            $('#salaryErr').html('');
+        }
+
+        if (form_data.profile == null) {
+            $('#profileErr').html('Please Select a Profile pic *').css('color', 'red');
+            isValid = false;
+        } else {
+            $('#profileErr').html('');
+        }
+
+        if (form_data.gender == null) {
+            $('#genderErr').html('Please Select a Gender *').css('color', 'red');
+            isValid = false;
+        } else {
+            $('#genderErr').html('');
+        }
+
+        if (form_data.date.includes('null')) {
+            $('#dateErr').html('Please Select a Start Date *').css('color', 'red');
+            isValid = false;
+        } else {
+            $('#dateErr').html('');
         }
 
         $.each($("input[name='department']:checked"), function () {
             form_data.department.push($(this).val());
         });
+
+        if (form_data.department.length == 0) {
+            $('#deptErr').html('Please Select Departments *').css('color', 'red');
+            isValid = false;
+        } else {
+            $('#deptErr').html('');
+        }
+
+        if (!isValid) {
+            return;
+        }
 
         $.ajax({
             url: 'http://localhost:3000/user',
@@ -34,7 +74,7 @@ $(document).ready(function () {
             success: function (data) {
                 var duplicate = false;
                 data.forEach(function (user) {
-                    if (user.name === form_data.name && user.gender === form_data.gender) {
+                    if (user.name.toLowerCase() === form_data.name.toLowerCase() && user.gender === form_data.gender) {
                         duplicate = true;
                         return false;
                     }
@@ -63,8 +103,8 @@ function submitForm(form_data) {
         data: JSON.stringify(form_data),
         contentType: 'application/json',
         success: function (data) {
-            alert('Form submitted successfully!');
             window.location.href = "./employeeDetails.html";
+            alert('Form submitted successfully!');
         },
         error: function (error) {
             console.log('Error:', error);
